@@ -1,0 +1,5 @@
+This is a travel site. It offers users to search destinations, flights and travel informations.
+The index.php is the main page for website.
+It is connected to the MySQL by PHP connections
+Front-end: HTML5, CSS3, Jquery, Javascript, AngularJS, Bootstrap, AJax
+Back-end: PHP
