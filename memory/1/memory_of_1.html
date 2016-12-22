@@ -1,0 +1,211 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel</title>
+<meta name="Description" content="Web Design Final Project" />
+<meta name="keywords" content="travel,trip,guide">
+<meta name="author" content="Mengchen Ding Zicheng gong Zhi Li">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+
+<!--Import Bootstrap-->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!--Import Jquery-ui-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+<link href="../../jquery-ui/jquery-ui.css" rel="stylesheet">
+<script src="../../jquery-ui/external/jquery/jquery.js"></script>
+<script src="../../jquery-ui/jquery-ui.js"></script>
+
+<script src="../../js/home.js"></script>
+<script src="../../js/travel.js"></script>
+<script src="../../js/login.js"></script>
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  $(function() {
+    $( "#accordion" ).accordion();
+  });
+  </script>
+<!--Custom css-->
+<link rel="stylesheet" href="../../css/home.css">
+<link rel="stylesheet" href="../../css/travel.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/osblogger.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      <a class="navbar-brand" href="../../index.php">
+        <!--<img  class="icon" alt="Brand" src="img/icon_travel.png">-->
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li><a href="../../destination.php">Destinations <span class="sr-only">(current)</span></a></li>
+        <li><a href="../../menu.html">Travel<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+        <a class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">HOT
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Asia</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">America</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Europe</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Find More</a></li>
+    </ul>
+    </li>      
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="search" class="form-control change" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default btn-change">
+          <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span></button>
+      </form>
+      <div class="navbar-right">
+        <div  id="userstatus" class="navbar-acc status" style="display:none">
+          <div class="userstatus hover">
+          <span class="avatar">
+             <a href="#">
+                 <img src="../../img/user.jpg" width="32" height="32">
+             </a>
+          </span>
+          <span class="username">
+          </span>
+          <span class="viewmore" style="padding-right:12px">
+             <a href="#" id="viewmore">
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+             </a>
+         </span>
+            <div id="user-more" class="q-layer user-fun user-default">
+            <ul>
+              <li>View Account</li>
+              <li>My Comments</li>
+              <li>Like List</li>
+              <li>My Orders</li>
+              <li id="logout">Log Out</li>
+            </ul>
+          </div>
+        </div>
+          <div class="usermsg">
+            <a class="msg" href="">
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+              <em class="num">206</em>
+            </a>
+          </div>
+        </div>
+        <ul id="noaccount" class="navbar-acc">
+          <li><button type="button" class="btn btn-default" data-toggle="modal" data-target="#registerModal">Register</button></li>
+          <li><button type="button" class="btn btn-default" data-toggle="modal" data-target="#loginModal">Login</button></li>
+        </ul>
+        </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="carousel-inner">
+<img src="../../img/guide.jpg"  alt="guide">
+</div>
+
+<div class="m-container">
+	<div class="labels">
+		<a id="label1" class="label" href="#">KISS!!!
+		<p>THIS foreword is written from the Playtime Coun­try try of our Eastern States, the coast of Maine. Here the little brown rabbit waits confidingly by the road­side till the human animal is all but abreast of him. .</p>
+		<span />
+		</a>
+		<a id="label2" class="label" href="#">Shoes...
+		<p>Such a land I would might unfold about the open fire in the dreaming eyes of every child who hears these little stories told. For there is wisdom found, -- and true content, -- in leisure with the merry heart</p>
+		<span />
+		</a>
+		<a id="label3" class="label" href="#">Smoking
+		<p>The stories in this book, some very old and un­changed, some new, and some changed from an older form, grew into their present shape by the process of being told to children many, many times. They were shortened or lengthened, modelled and remodelled,</p>
+		<span />
+		</a>
+		<a id="label4" class="label" href="#">Artist
+		<p>The stories in this book, some very old and un­changed, some new, and some changed from an older form, grew into their present shape by the process of being told to children many, many times. They were shortened or lengthened, modelled and remodelled.</p>
+		<span />
+		</a>
+		<a id="label5" class="label" href="http://www.5icool.org/">Volcano!!
+		<p>It is the belief of the publishers, here and in England, that some of the stories ought to be printed separately  from these books on method, for the more ready access</p>
+		<span />
+		</a>
+	</div>
+	<div class="description"><p></p><a class="close">X</a></div>
+</div>
+
+<div>
+  <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
+      </div>
+</div>
+<!-- FOOTER -->
+    <footer>
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Northeastern University</p>
+                        <p>Web Design</p>
+                        <p>Mengchen Ding Zicheng Gong Zhi Li</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Share the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Contact Us</h3>
+                        <p>Mengchen: <a href="mailto:ding.men@husky.neu.edu" style="color:white;">ding.men@husky.neu.edu</a></p>
+                        <p>Zicheng: <a href="mailto:gong.zi@husky.neu.edu" style="color:white;">gong.zi@husky.neu.edu</a></p>
+                        <p>Zhi Li: <a href="mailto:li.zhi3@husky.neu.edu" style="color:white;">li.zhi3@husky.neu.edu</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright © Northearstern University 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+/*Set the width of the container*/
+.vertical-container{width:100%;position:relative}
+	
+/*This used for set the whole container*/
+@media (max-width:991px){#prototype-page .container,#schedule-page .container{padding-left:50px;padding-right:50px}}
+
+/*set the position of the circle*/
+.vertical-container{height:100%;display:table}
+.vertical-container .vertical-content{position:relative;vertical-align:middle;display:table-cell}
+
+/* set the postion*/
+@media (max-width:767px){header .logo,header .logo:after,header .logo:before,header .toggle-button{width:28px;height:28px}
+						 header .logo{top:30px;left:30px}header .toggle-button{top:30px;right:30px}
+						 header .navigation li{display:none!important}
+						 header .main-menu{font-size:20px}}
+.cineslider-container,.loader,.page{overflow:hidden;width:100%;height:100%}
+.cineslider-container{position:relative}
+
+/*set the postion*/
+.page{position:absolute;top:0;left:0;z-index:2}
+			
+/*The shape after touching, now it's a circle*/			
+/*-----------------------------Left Side--------------------------*/
+/*set the words in the circle, include the color changed*/
+.splitter .splitter-button-left{width:280px;height:120px;
+						   -webkit-transition:color .4s cubic-bezier(.7,0,.3,1);
+						   -moz-transition:color .4s cubic-bezier(.7,0,.3,1);
+						   -o-transition:color .4s cubic-bezier(.7,0,.3,1);
+						   transition:color .4s cubic-bezier(.7,0,.3,1);
+						   position:relative;
+						   display:inline-block;
+						   font-size:32px;
+						   text-transform:uppercase;
+						   color:#320d7f;
+						   line-height:1.1;
+						   padding:18px;
+						   z-index:1}
+
+/*Bezier cubic: set the circle, and the change time between the shape*/
+.splitter .splitter-button-left:before{-webkit-transition:all .9s cubic-bezier(.7,0,.3,1);
+								  -moz-transition:all .9s cubic-bezier(.7,0,.3,1);
+								  -o-transition:all .9s cubic-bezier(.7,0,.3,1);
+								  transition:all .9s cubic-bezier(.7,0,.3,1);
+								  width:280px;height:120px;
+								  position:absolute;top:-6px;
+								  left:0;z-index:-1;
+								  border-width:12px;
+								  border-style:solid;
+								  border-color:rgba(0, 173, 255, 0.65);/*the color of the circle before touching*/
+								  display:block;
+								  content:''}
+
+html.no-touch .splitter .splitter-item-left:hover .splitter-button-left:before{
+								  border-radius:50%;
+								  width:280px;
+								  height:280px;
+								  top:-89px;
+								  border-color:#fff}
+
+/*setting in the circle*/
+html.no-touch .splitter .splitter-button-left:hover:before{background-image: url("../img/boy.gif");}
+
+/*set the background before touching:LEFT SIDE*/
+.splitter .splitter-item-left{background-image: #000);
+						 text-align:center}
+
+.splitter .splitter-item-left.active:first-child{background-color:#fff!important}
+.splitter .splitter-item-left.active:last-child{background-color:#320d7f!important}
+html.no-touch .splitter .splitter-item-left:hover{background-image: url("../img/beac.gif");opacity: 0.8}
+
+html.no-touch .splitter .splitter-item-left:hover .splitter-button-left{color:#fff}
+/*it's used for set the color of the words in the circle*/
+
+
+@media (max-width:991px){
+	#homepage-introduction .intro-paragraph{display:none!important}}
+
+.cineslider-container .cineslider-shifter,.cineslider-container .cineslider-slide{left:0;height:100%;top:0;width:100%;position:absolute}
+
+.splitter .splitter-item-left{position:absolute;width:50%;height:100%;top:0;z-index:1}
+/*make two chld non-overlapping*/
+.splitter .splitter-item-left:first-child{left:0}
+.splitter .splitter-item-left:last-child{right:0}
+/*-----------------------------Left Side Finish--------------------------*/
+
+
+/*The shape after touching, now it's a circle*/			
+/*-----------------------------Right Side--------------------------*/
+/*set the words in the circle, include the color changed*/
+.splitter .splitter-button-right{width:280px;height:120px;
+						   -webkit-transition:color .4s cubic-bezier(.7,0,.3,1);
+						   -moz-transition:color .4s cubic-bezier(.7,0,.3,1);
+						   -o-transition:color .4s cubic-bezier(.7,0,.3,1);
+						   transition:color .4s cubic-bezier(.7,0,.3,1);
+						   position:relative;
+						   display:inline-block;
+						   font-size:32px;
+						   text-transform:uppercase;
+						   color:#320d7f;
+						   line-height:1.1;
+						   padding:18px;
+						   z-index:1}
+
+/*Bezier cubic: set the circle, and the change time between the shape*/
+.splitter .splitter-button-right:before{-webkit-transition:all .9s cubic-bezier(.7,0,.3,1);
+								  -moz-transition:all .9s cubic-bezier(.7,0,.3,1);
+								  -o-transition:all .9s cubic-bezier(.7,0,.3,1);
+								  transition:all .9s cubic-bezier(.7,0,.3,1);
+								  width:280px;height:120px;
+								  position:absolute;top:-6px;
+								  left:0;z-index:-1;
+								  border-width:12px;
+								  border-style:solid;
+								  border-color:rgba(0, 173, 255, 0.65);/*the color of the circle before touching*/
+								  display:block;
+								  content:''}
+
+html.no-touch .splitter .splitter-item-right:hover .splitter-button-right:before{
+								  border-radius:50%;
+								  width:280px;
+								  height:280px;
+								  top:-89px;
+								  border-color:#fff}
+
+/*setting in the circle*/
+html.no-touch .splitter .splitter-button-right:hover:before{background-image: url("../img/right_side.jpg");}
+
+/*set the background before touching:LEFT SIDE*/
+.splitter .splitter-item-right{background-image: #000);
+						 text-align:center}
+
+.splitter .splitter-item-right.active:first-child{background-color:#fff!important}
+.splitter .splitter-item-right.active:last-child{background-color:#320d7f!important}
+html.no-touch .splitter .splitter-item-right:hover{background-image: url("../img/memory.jpg");opacity: 0.8}
+
+html.no-touch .splitter .splitter-item-right:hover .splitter-button-right{color:#fff}
+/*it's used for set the color of the words in the circle*/
+
+
+@media (max-width:991px){
+	#homepage-introduction .intro-paragraph{display:none!important}}
+
+.cineslider-container .cineslider-shifter,.cineslider-container .cineslider-slide{left:0;height:100%;top:0;width:100%;position:absolute}
+
+.splitter .splitter-item-right{position:absolute;width:50%;height:100%;top:0;z-index:1}
+/*make two chld non-overlapping*/
+.splitter .splitter-item-right:first-child{left:0}
+.splitter .splitter-item-right:last-child{right:0}
+/*-----------------------------Right Side Finish--------------------------*/
+
+/*maintain the size of the circle*/
+*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+a{color:#337ab7;text-decoration:none}
+
+

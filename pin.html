@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel</title>
+<meta name="Description" content="Web Design Final Project" />
+<meta name="keywords" content="travel,trip,guide">
+<meta name="author" content="Mengchen Ding Zicheng gong Zhi Li">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<script src="js/wow.min.js"></script>
+
+<script src="js/home.js"></script>
+<script src="js/travel.js"></script>
+<script src="js/login.js"></script>
+<script src="js/register.js"></script>
+
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/travel.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/default.css">
+	
+	<style>
+	* { margin:0; }
+	#div1 { margin:auto; position:relative; }
+	.box { float:left; padding:10px; border:1px solid #ccc; background:#f7f7f7; box-shadow:0 0 8px #ccc; }
+	.box:hover { box-shadow:0 0 10px #999; }
+	.box img { width:200px; }
+	</style>
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+
+	
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      <a class="navbar-brand" href="index.php">
+        <!--<img  class="icon" alt="Brand" src="img/icon_travel.png">-->
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li><a href="destination.php">Destinations <span class="sr-only">(current)</span></a></li>
+        <li><a href="menu.html">Travel<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+        <a class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">HOT
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Asia</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">America</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Europe</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Find More</a></li>
+    </ul>
+    </li>      
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="search" class="form-control change" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default btn-change">
+          <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span></button>
+      </form>
+      <div class="navbar-right">
+        <div  id="userstatus" class="navbar-acc status" style="display:none">
+          <div class="userstatus hover">
+          <span class="avatar">
+             <a href="#">
+                 <img src="img/user.jpg" width="32" height="32">
+             </a>
+          </span>
+          <span class="username">
+          </span>
+          <span class="viewmore" style="padding-right:12px">
+             <a href="#" id="viewmore">
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+             </a>
+         </span>
+            <div id="user-more" class="q-layer user-fun user-default">
+            <ul>
+              <li>View Account</li>
+              <li>My Comments</li>
+              <li>Like List</li>
+              <li>My Orders</li>
+              <li id="logout">Log Out</li>
+            </ul>
+          </div>
+        </div>
+          <div class="usermsg">
+            <a class="msg" href="">
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+              <em class="num">206</em>
+            </a>
+          </div>
+        </div>
+        <ul id="noaccount" class="navbar-acc">
+          <li><button type="button" class="btn btn-default" data-toggle="modal" data-target="#registerModal">Register</button></li>
+          <li><button type="button" class="btn btn-default" data-toggle="modal" data-target="#loginModal">Login</button></li>
+        </ul>
+        </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="carousel-inner">
+<img src="img/wt.jpg" alt="water fall">
+</div>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>Guide</h1>
+		</header>
+		<div class="htmleaf-content bgcolor-3">
+			<div id="div1">
+			    <div class="box"><a href="memory/1/memory_of_1.html"><img src="img/worldimgs/1.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/2/memory_of_2.html"><img src="img/worldimgs/2.jpg" alt=""></a></div>
+			    <div class="box"><a href="memory/3/memory_of_3.html"><img src="img/worldimgs/3.jpg" alt=""></a></div>
+			    <div class="box"><a href="memory/4/memory_of_4.html"><img src="img/worldimgs/4.jpg" alt=""></a></div>
+			    <div class="box"><a href="memory/5/memory_of_5.html"><img src="img/worldimgs/5.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/6/memory_of_6.html"><img src="img/worldimgs/6.jpg" alt=""></a></div>
+			    <div class="box"><a href="memory/7/memory_of_7.html"><img src="img/worldimgs/7.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/1/memory_of_1.html"><img src="img/worldimgs/1.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/2/memory_of_2.html"><img src="img/worldimgs/2.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/3/memory_of_3.html"><img src="img/worldimgs/3.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/4/memory_of_4.html"><img src="img/worldimgs/4.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/5/memory_of_5.html"><img src="img/worldimgs/5.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/6/memory_of_6.html"><img src="img/worldimgs/6.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/7/memory_of_7.html"><img src="img/worldimgs/7.jpg" alt=""></a></div>
+			    <div class="box"><a href="memory/1/memory_of_1.html"><img src="img/worldimgs/1.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/2/memory_of_2.html"><img src="img/worldimgs/2.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/3/memory_of_3.html"><img src="img/worldimgs/3.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/4/memory_of_4.html"><img src="img/worldimgs/4.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/5/memory_of_5.html"><img src="img/worldimgs/5.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/6/memory_of_6.html"><img src="img/worldimgs/6.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/7/memory_of_7.html"><img src="img/worldimgs/7.jpg" alt=""></a></div>
+			    <div class="box"><a href="memory/1/memory_of_1.html"><img src="img/worldimgs/1.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/2/memory_of_2.html"><img src="img/worldimgs/2.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/3/memory_of_3.html"><img src="img/worldimgs/3.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/4/memory_of_4.html"><img src="img/worldimgs/4.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/5/memory_of_5.html"><img src="img/worldimgs/5.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/6/memory_of_6.html"><img src="img/worldimgs/6.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/7/memory_of_7.html"><img src="img/worldimgs/7.jpg" alt=""></a></div>
+			    <div class="box"><a href="memory/1/memory_of_1.html"><img src="img/worldimgs/1.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/2/memory_of_2.html"><img src="img/worldimgs/2.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/3/memory_of_3.html"><img src="img/worldimgs/3.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/4/memory_of_4.html"><img src="img/worldimgs/4.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/5/memory_of_5.html"><img src="img/worldimgs/5.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/6/memory_of_6.html"><img src="img/worldimgs/6.jpg" alt=""></a></div>
+          <div class="box"><a href="memory/7/memory_of_7.html"><img src="img/worldimgs/7.jpg" alt=""></a></div>
+			</div>
+		</div>
+
+		<div class="container"> 
+      <div class="contact-form">
+        <div class="col-md-6 contact-grid">
+          <h4>Contact form</h4>
+          <form>
+            <p class="your-para">Your Name</p>
+            <input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+            <p class="your-para">Your Phone number</p>
+            <input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+            <p class="your-para">Your Message</p>
+            <textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = '';}"></textarea>
+            <div class="send">
+              <input type="submit" value="Send">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 contact-in">
+          <h4>Contact information</h4>
+          <p class="sed-para"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor.</p>
+          <p class="sit-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.  </p>
+          <div class="more-address"> 
+            <div class="address-more">
+              <p>The company name,</p>
+              <p>Lorem ipsum dolor,</p>
+              <p>Glasglow Dr 40 Fe 72. </p>
+            </div>
+            <div class="address-left">
+              <p>Tel:1115550001</p>
+              <p>Fax:190-4509-494</p>
+              <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+
+<footer>
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Northeastern University</p>
+                        <p>Web Design</p>
+                        <p>Mengchen Ding Zicheng Gong Zhi Li</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Share the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Contact Us</h3>
+                        <p>Mengchen: <a href="mailto:ding.men@husky.neu.edu" style="color:white;">ding.men@husky.neu.edu</a></p>
+                        <p>Zicheng: <a href="mailto:gong.zi@husky.neu.edu" style="color:white;">gong.zi@husky.neu.edu</a></p>
+                        <p>Zhi Li: <a href="mailto:li.zhi3@husky.neu.edu" style="color:white;">li.zhi3@husky.neu.edu</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright © Northearstern University 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+	<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/jquery.waterfall.js"></script>
+	<script>
+	$("#div1").waterfall({
+	    itemClass: ".box",
+	    minColCount: 2,
+	    spacingHeight: 10,
+	    resizeable: true,
+	    ajaxCallback: function(success, end) {
+	        var data = {"data": [
+	            { "src": "3.jpg" }, { "src": "4.jpg" }, { "src": "2.jpg" }, { "src": "5.jpg" }, { "src": "1.jpg" }, { "src": "6.jpg" }
+	        ]};
+	        var str = "";
+	        var templ = '<div class="box" style="opacity:0;filter:alpha(opacity=0);"><div class="pic"><img src="img/worldimgs/{{src}}" /></div></div>'
+
+	        for(var i = 0; i < data.data.length; i++) {
+	            str += templ.replace("{{src}}", data.data[i].src);
+	        }
+	        $(str).appendTo($("#div1"));
+	        success();
+	        end();
+	    }
+	});
+	</script>
+	
+</body>
+</html>

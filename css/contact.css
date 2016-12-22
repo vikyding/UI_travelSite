@@ -1,0 +1,71 @@
+.container{
+	background:#15a1ca;
+}
+.contact-form{
+	padding: 5em 0 3em;
+}
+.contact-form h4{
+	font-size: 2em;
+color: #22383f;
+padding: 0 0 0.5em;
+}
+p.your-para{
+	color: #FFF;
+margin: 0;
+}
+
+.contact-grid input[type="text"], .contact-grid textarea{
+	width: 100%;
+padding: 1em;
+margin: 1em 0;
+background: #eee;
+outline:none;
+border: none;
+-webkit-appearance: none;
+}
+
+
+.contact-grid textarea{
+	resize:none;
+}
+
+.send input[type="submit"]{
+	width: 30%;
+font-size: 1.5em;
+background: #22383f;
+padding: 0.6em 1em;
+text-align: center;
+color: #15a1ca;
+border: none;
+outline:none;
+-webkit-appearance: none;
+}
+
+.contact-in h4, .contact-form h4{
+	font-size: 2em;
+color: #22383f;
+padding: 0 0 0.5em;
+}
+
+.contact-in p{
+	font-size:1em;
+color: #fff;
+width: 100%;
+line-height: 25px;
+}
+p.sed-para{
+	font-size: 1.3em;
+padding: 0em 0 0.6em;
+color:#fff;
+}
+.more-address{
+	padding: 3em 0;
+}
+.address-more, .address-left{
+	float:left;
+width:40%;
+}
+
+.address-more p{
+	width: 100%;
+}
